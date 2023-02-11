@@ -1,16 +1,17 @@
 import './App.css';
-import {routes} from './router'
+import { routes } from './router'
 import { useRoutes } from 'react-router-dom';
+import TopNav from './component/TopNav';
 
 function App() {
 
-  let routs=useRoutes(routes)
+  let routs = useRoutes(routes)
   return (
     <>
-    <h1 style={{textAlign:'center'}}>Hello,World</h1>
-    {routs}
+      <TopNav />
+      {routs}
     </>
-  
+
   );
 }
 

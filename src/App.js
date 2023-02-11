@@ -1,10 +1,16 @@
 import './App.css';
+import {routes} from './router'
+import { useRoutes } from 'react-router-dom';
 
 function App() {
+
+  let routs=useRoutes(routes)
   return (
-    <div >
-      <h1 style={{textAlign:'center'}}>Hello,World</h1>
-    </div>
+    <>
+    <h1 style={{textAlign:'center'}}>Hello,World</h1>
+    {routs}
+    </>
+  
   );
 }
 

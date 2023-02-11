@@ -1,7 +1,8 @@
 import './App.css';
 import { routes } from './router'
 import { useRoutes } from 'react-router-dom';
-import TopNav from './component/TopNav';
+import TopNav from './component/TopNav/TopNav';
+import Sidbar from './component/TopNav/Sidbar/Sidbar';
 
 function App() {
 
@@ -9,7 +10,11 @@ function App() {
   return (
     <>
       <TopNav />
-      {routs}
+      <div className='contaner'>
+        <Sidbar />
+        {routs}
+      </div>
+
     </>
 
   );

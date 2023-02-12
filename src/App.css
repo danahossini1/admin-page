@@ -4,9 +4,10 @@
 }
 
 .contaner{
-  margin-top: 50px;
   display: flex;
-  
 
-
+}
+.Link{
+  text-decoration: none;
+  color: inherit;
 }

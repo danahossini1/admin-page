@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Sidbar.css'
 import LineStyleIcon from '@mui/icons-material/LineStyle';
 import TimelineIcon from '@mui/icons-material/Timeline';
@@ -19,7 +20,7 @@ export default function Sidbar() {
                 <div className='sidmenu'>
                     <div className='sid-title'>dashboard</div>
                     <ul className='sid-item'>
-                        <li className='sid-item-li'><LineStyleIcon/> Home</li>
+                      <Link to={'/'} className="Link"><li className='sid-item-li active'><LineStyleIcon/> Home</li></Link>  
                         <li className='sid-item-li'>< TimelineIcon/> Analytics</li>
                         <li className='sid-item-li'><TrendingUpIcon /> Sales</li>
                     </ul>
@@ -27,9 +28,9 @@ export default function Sidbar() {
                 <div className='sidmenu'>
                     <div className='sid-title'>Quick Menu</div>
                     <ul className='sid-item'>
-                        <li className='sid-item-li'>< PermIdentityIcon/> User</li>
-                        <li className='sid-item-li'>< PermIdentityIcon/> New User</li>
-                        <li className='sid-item-li'>< StorefrontIcon/> Products</li>
+                     <Link to={'/userList'} className="Link"><li className='sid-item-li'>< PermIdentityIcon/> User</li></Link>   
+                     <Link to={'/newUser'} className="Link"><li className='sid-item-li'>< PermIdentityIcon/> New User</li></Link>   
+                     <Link to={'/products'} className="Link"><li className='sid-item-li'>< StorefrontIcon/> Products</li></Link>   
                         <li className='sid-item-li'>< AttachMoneyIcon/> Transactions</li>
                         <li className='sid-item-li'>< ReportIcon/> Reports</li>
                     </ul>

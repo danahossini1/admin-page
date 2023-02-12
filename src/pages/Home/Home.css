@@ -1,4 +1,10 @@
 .home-contaner{
-    flex: 5;
+    width: 80%;
+    background: rgb(224, 224, 224);
+    
+}
 
+.Home-fitures{
+    display: flex;
+    justify-content: space-around;
 }

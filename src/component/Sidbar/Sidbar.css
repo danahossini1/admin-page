@@ -1,8 +1,10 @@
 .sidbar-contaner{
-    height:100vh ;
+    height:92vh ;
     flex: 1;
     background: rgb(224, 224, 224);
     position: sticky;
+    top: 50px
+ 
     
 }
 .sidbar{

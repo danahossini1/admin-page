@@ -19,3 +19,12 @@
 .chart-title{
     margin-bottom: 20px;
 }
+.home-botton{
+    display: flex;
+}
+.last-member-home{
+    flex: 1;
+}
+.last-Transaction{
+    flex: 2;
+}

@@ -1,0 +1,49 @@
+.lst-contaner {
+    margin: 30px 20px ;
+    padding: 10px 0px 10px 10px;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.60);
+    border-radius: 8px;
+}
+
+.lst-form {
+    width: 100%;
+    border-spacing: 20px;
+    text-align: left;
+}
+
+.lst-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.customer-td{
+    display: flex;
+    align-items: center;
+}          
+.lst-userName{
+    margin-left: 8px;
+    font-weight: 500;
+}   
+.lst-button{
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.lst-button.Approved{
+    background: rgba(16, 158, 63, 0.3);
+    color: rgb(28, 114, 49);
+}
+.lst-button.Declined{
+    background: rgba(212, 75, 82, 0.3);
+    color: rgb(212, 75, 82);
+}
+.lst-button.Pending{
+    background: rgba(58, 109, 156, 0.3);
+    color:rgb(58, 109, 156);
+}

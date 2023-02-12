@@ -8,3 +8,14 @@
     display: flex;
     justify-content: space-around;
 }
+.chart-contaner{
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.50);
+    border-radius: 7px;
+    font-weight: 630;
+
+}
+.chart-title{
+    margin-bottom: 20px;
+}

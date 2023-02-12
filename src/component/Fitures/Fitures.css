@@ -7,6 +7,11 @@
     cursor: pointer;
     
 }
+.fiture-contaner:hover{
+    transform: rotateY(2px);
+    transition: all 0.1s linear;
+    box-shadow: 0 0 28px -9px rgba(0, 0, 0, 0.95);
+}
 .fiture{
 }
 .fiture-title{

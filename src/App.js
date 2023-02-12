@@ -2,7 +2,7 @@ import './App.css';
 import { routes } from './router'
 import { useRoutes } from 'react-router-dom';
 import TopNav from './component/TopNav/TopNav';
-import Sidbar from './component/TopNav/Sidbar/Sidbar';
+import Sidbar from './component/Sidbar/Sidbar';
 
 function App() {
 

@@ -1,0 +1,15 @@
+.productpage-contaner{
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    
+}
+.productpage-button{
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    background: rgb(155, 153, 153);
+    border-radius: 10px;
+}

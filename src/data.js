@@ -103,3 +103,11 @@ export let AllUsers = [
         avatar: './logo512.png'
     },
 ]
+export let Allproduct=[
+    {id:1, name:'aser',avatar: './logo512.png', price:2000},
+    {id:2, name:'lonovo',avatar: './logo512.png', price:3000},
+    {id:3, name:'Dell',avatar: './logo512.png', price:1500},
+    {id:4, name:'Hp',avatar: './logo512.png', price:7000},
+    {id:5, name:'Apple',avatar: './logo512.png', price:4000},
+    {id:6, name:'lenovo',avatar: './logo512.png', price:200},
+]

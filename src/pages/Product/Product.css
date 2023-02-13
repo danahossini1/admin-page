@@ -1,10 +1,18 @@
 .productpage-contaner{
     flex: 4;
     display: flex;
+    flex-direction: column;
+    background: rgb(223, 221, 221);
+}
+.productpage-head{
+    display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     
+}
+.productpage-title{
+    font-size: 30px;
 }
 .productpage-button{
     border: none;
@@ -12,4 +20,92 @@
     font-weight: 700;
     background: rgb(155, 153, 153);
     border-radius: 10px;
+}
+.product-top{
+    display: flex;
+}
+.product-top-left{
+ flex: 1;
+ padding: 0 10px;
+}
+.product-top-right{
+    flex: 1;
+    margin: 20px;
+    padding: 8px ;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.50);
+    border-radius: 7px;
+    font-weight: 630;
+
+}
+.product-top-right-top{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.product-top-right-top-img{
+    width: 40px;
+    height: 40px;
+    border: 1px gray solid;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.product-top-right-botton{
+    display: flex;
+    flex-direction: column;
+}
+.product-top-right-botton>div{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 2px;
+}
+.product-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 28px;
+    padding: 20px ;
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.50);
+    border-radius: 7px;
+    font-weight: 630;
+
+}
+.product-bottom-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+
+
+}
+.product-bottom-left>label{
+    margin: 10px 0 ;
+}
+.Product-input{
+    border: none;
+    border-bottom: 1px gray solid;
+    padding: 4px;
+    background: inherit;
+}
+.Product-input:focus{
+    outline: none;
+}
+.product-bottom-left>select{
+    background: inherit;
+    border: none;
+    border-bottom: 1px gray solid;
+}
+.product-bottom-right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 40px;
+    
+
+}
+.Product-btn-button{
+    background: rgb(12, 28, 172);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
 }

@@ -4,7 +4,7 @@ import { ResponsiveContainer, LineChart, Line, CartesianGrid, XAxis, Tooltip } f
 export default function Chart({ data, title, grid }) {
     return (
         <div className='chart-contaner'>
-            <h2 className='chart-title'>{title}</h2>
+            <h2 className='chart-title' >{title}</h2>
             <ResponsiveContainer aspect={4}>
                 <LineChart width='100%' data={data} >
                     <Line type='monotone' stroke='#5550bd' dataKey='price' />

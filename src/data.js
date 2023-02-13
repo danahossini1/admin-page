@@ -111,3 +111,8 @@ export let Allproduct=[
     {id:5, name:'Apple',avatar: './logo512.png', price:4000},
     {id:6, name:'lenovo',avatar: './logo512.png', price:200},
 ]
+export let Sale=[
+    { "name": 'janvey', "price": 42000 },
+    { "name": 'febriy', "price": 65000 },
+    { "name": 'marce', "price": 49000 },
+]

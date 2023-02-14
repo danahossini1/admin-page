@@ -20,6 +20,7 @@
     font-weight: 700;
     background: rgb(155, 153, 153);
     border-radius: 10px;
+    cursor: pointer;
 }
 .product-top{
     display: flex;
@@ -53,6 +54,7 @@
 .product-top-right-botton{
     display: flex;
     flex-direction: column;
+    
 }
 .product-top-right-botton>div{
     display: flex;
@@ -94,6 +96,9 @@
     border: none;
     border-bottom: 1px gray solid;
 }
+.product-bottom-left>select:focus{
+ outline: none;
+}
 .product-bottom-right{
     display: flex;
     justify-content: space-between;
@@ -108,4 +113,10 @@
     border-radius: 10px;
     border: none;
     padding: 10px 15px;
+    cursor: pointer;
+}
+.product-icon{
+    cursor: pointer;
+    font-size: 30px !important;
+    margin-right: 20px;
 }

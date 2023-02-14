@@ -7,11 +7,21 @@ background: rgb(233, 229, 229);
 .user-Div{
 display: flex;
 align-items: center;
+font-weight: 500;
+font-size: 17px;
 }
 .Usr-img{
     width: 35px;
+    height: 35px;
     border-radius: 50%;
     margin-right: 8px;
+}
+.Usr-img-Product{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    
 }
 .action-div{
     display: flex;

@@ -14,20 +14,20 @@ export let dataHomeChart = [
 ]
 
 export let LastNewUser = [
-    { img: './logo512.png', name: 'Dana Hoseyni', job: 'web developer' },
-    { img: './logo512.png', name: 'Sina Hoseyni', job: 'pyton developer' },
-    { img: './logo512.png', name: 'Ali Shamary', job: 'js developer' },
-    { img: './logo512.png', name: 'Sadogh Amin Yaboo', job: 'react developer' },
-    { img: './logo512.png', name: 'Ali Haji Sufa', job: 'php developer' },
+    { img: '/image/per1.jfif'  , name: 'Dana Hoseyni', job: 'web developer' },
+    { img:  'image/per6.jfif' , name: 'Sina Hoseyni', job: 'pyton developer' },
+    { img: '/image/per4.jfif'  , name: 'Ali Shamary', job: 'js developer' },
+    { img: '/image/per5.jfif'  , name: 'Sadogh Amin Yaboo', job: 'react developer' },
+    { img:  '/image/per2.jpg' , name: 'Ali Haji Sufa', job: 'php developer' },
 
 ]
 export let LastTransactionDate = [
-    { img: './logo512.png', id: 1, customer: 'Dana Hossini', date: ' 12 jun 2023', amount: 22000, status: 'Approved' },
-    { img: './logo512.png', id: 2, customer: 'Sina Hossini', date: ' 16 apr 2023', amount: 3000, status: 'Declined' },
-    { img: './logo512.png', id: 3, customer: 'Monib Hossini', date: ' 11 ags 2023', amount: 14000, status: 'Pending' },
-    { img: './logo512.png', id: 4, customer: 'Esmail Hossini', date: ' 18 jun 2023', amount: 71000, status: 'Approved' },
-    { img: './logo512.png', id: 5, customer: 'Ali Hossini', date: ' 12 may 2023', amount: 8000, status: 'Declined' },
-    { img: './logo512.png', id: 6, customer: 'Sadogh Hossini', date: ' 12 jun 2023', amount: 3500, status: 'Declined' },
+    { img: '/image/per1.jfif', id: 1, customer: 'elan mask', date: ' 12 jun 2023', amount: 22000, status: 'Approved' },
+    { img: '/image/per2.jpg', id: 2, customer: 'Sina Hossini', date: ' 16 apr 2023', amount: 3000, status: 'Declined' },
+    { img: '/image/per7.jpg', id: 3, customer: 'Monib Hossini', date: ' 11 ags 2023', amount: 14000, status: 'Pending' },
+    { img: '/image/per4.jfif', id: 4, customer: 'Esmail Hossini', date: ' 18 jun 2023', amount: 71000, status: 'Approved' },
+    { img:  '/image/per5.jfif', id: 5, customer: 'Ali Hossini', date: ' 12 may 2023', amount: 8000, status: 'Declined' },
+    { img: '/image/per6.jfif', id: 6, customer: 'Sadogh Hossini', date: ' 12 jun 2023', amount: 3500, status: 'Declined' },
 ]
 export let AllUsers = [
     {
@@ -40,11 +40,11 @@ export let AllUsers = [
     },
     {
         id: 2,
-        userName: 'Sina Hossini',
-        email: 'Sina@gmail.com',
+        userName: 'elan mask',
+        email: 'elan@gmail.com',
         status: 'no-Active',
         transeAction: '$56.5',
-        avatar: './logo512.png'
+        avatar: '/image/per1.jfif'
     },
     {
         id: 3,
@@ -52,7 +52,7 @@ export let AllUsers = [
         email: 'Ali@gmail.com',
         status: 'no-Active',
         transeAction: '$221.56',
-        avatar: './logo512.png'
+        avatar: '/image/per2.jpg'
     },
     {
         id: 4,
@@ -60,15 +60,15 @@ export let AllUsers = [
         email: 'Yasin@gmail.com',
         status: 'Active',
         transeAction: '$2.86',
-        avatar: './logo512.png'
+        avatar: '/image/per3.jpg'
     },
     {
         id: 5,
-        userName: 'Dana Hossini',
-        email: 'Dana@gmail.com',
+        userName: 'qasem Hossini',
+        email: 'qasem@gmail.com',
         status: 'Active',
         transeAction: '22.56',
-        avatar: './logo512.png'
+        avatar: '/image/per4.jfif'
     },
     {
         id: 6,
@@ -76,7 +76,7 @@ export let AllUsers = [
         email: 'Dana@gmail.com',
         status: 'Active',
         transeAction: '22.56',
-        avatar: './logo512.png'
+        avatar: '/image/per5.jfif'
     },
     {
         id: 7,
@@ -84,7 +84,7 @@ export let AllUsers = [
         email: 'Dana@gmail.com',
         status: 'Active',
         transeAction: '22.56',
-        avatar: './logo512.png'
+        avatar: '/image/per6.jfif'
     },
     {
         id: 8,
@@ -104,12 +104,12 @@ export let AllUsers = [
     },
 ]
 export let Allproduct=[
-    {id:1, name:'aser',avatar: './logo512.png', price:2000},
-    {id:2, name:'lonovo',avatar: './logo512.png', price:3000},
-    {id:3, name:'Dell',avatar: './logo512.png', price:1500},
-    {id:4, name:'Hp',avatar: './logo512.png', price:7000},
-    {id:5, name:'Apple',avatar: './logo512.png', price:4000},
-    {id:6, name:'lenovo',avatar: './logo512.png', price:200},
+    {id:1, name:'aser',avatar: '/image/lap1.jpg', price:2000},
+    {id:2, name:'lonovo',avatar: '/image/lap2.jpg', price:3000},
+    {id:3, name:'Dell',avatar: '/image/lap3.jpg', price:1500},
+    {id:4, name:'Hp',avatar: '/image/lap2.jpg', price:7000},
+    {id:5, name:'Apple',avatar:'/image/lap1.jpg', price:4000},
+    {id:6, name:'lenovo',avatar: '/image/lap3.jpg', price:200},
 ]
 export let Sale=[
     { "name": 'janvey', "price": 42000 },

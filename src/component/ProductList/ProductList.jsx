@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './ProductList.css'
+import '../UserListComp/UserListComp.css';
 import { Link } from 'react-router-dom';
 import { DataGrid } from '@mui/x-data-grid'
 import { Allproduct } from '../../data';
@@ -24,7 +24,7 @@ export default function UserListComp() {
             renderCell: (params) => {
                 return (
                     <div className='user-Div'>
-                        <img src={params.row.avatar} className='Usr-img' />{params.row.name}
+                        <img src={params.row.avatar} className='Usr-img-Product' />{params.row.name}
                     </div>
                 )
             }

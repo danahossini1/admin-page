@@ -16,7 +16,7 @@ export default function Product() {
         <div className='product-top-left'><Chart data={Sale} title='sale for 3 month' /> </div>
         <div className='product-top-right'>
           <div className='product-top-right-top'>
-            <img src='./logo512.png' className='product-top-right-top-img' />
+            <img src='/image/lap1.jpg' className='product-top-right-top-img' />
             <span>lop top dell</span>
           </div>
           <div className='product-top-right-botton' >
@@ -44,7 +44,7 @@ export default function Product() {
           </select>
         </div>
         <div className='product-bottom-right'>
-          <div><img src="./logo512.png" width='40px'/> <IosShareIcon /> </div>
+          <div><img src='/image/lap1.jpg' width='150px'/> <IosShareIcon className='product-icon' /> </div>
           <div><button className='Product-btn-button'>{'Upload (Edit)'}</button></div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function LastMembers() {
                  <div className='lsm-ul'>
                 <ul>
                     <li className='lsm-li'>
-                        <img src={user.img} width='40px' />
+                        <img src={user.img} className='home-botton-img' />
                         <div className="lsm-user">
                             <span className='lsm-user-name'>{user.name}</span>
                             <span className='lsm-user-job'>{user.job} </span>

@@ -3,6 +3,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import LanguageIcon from '@mui/icons-material/Language';
 import './TopNav.css'
+import { Link } from 'react-router-dom';
 
 export default function TopNav() {
     return (
@@ -10,7 +11,7 @@ export default function TopNav() {
             <div className='topBar-contaner'>
                 <div className='topbar'>
                     <div className='top-left' >
-                        <h2 className='top-logo'>TEST PROJECT</h2>
+                       <Link to='./' style={{textDecoration:'none'}}> <h2 className='top-logo'>TEST PROJECT</h2></Link>
                     </div>
                     <div className='top-right'>
                         <div className='top-icon'>
@@ -24,7 +25,7 @@ export default function TopNav() {
                         <div className='top-icon'>
                             <LanguageIcon />
                         </div>
-                        <img src='./logo512.png' className='top-user-img' />
+                        <img src='/image/per1.jfif' className='top-user-img' />
                     </div>
                 </div>
             </div>

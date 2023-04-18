@@ -8,18 +8,19 @@
 .lst-form {
     width: 100%;
     border-spacing: 20px;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .lst-title {
-    font-weight: 600;
     font-size: 20px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .customer-td{
     display: flex;
     align-items: center;
+    justify-content: start;
+    gap: 20px; 
 }          
 .lst-userName{
     margin-left: 8px;
@@ -36,14 +37,20 @@
     font-weight: 600;
 }
 .lst-button.Approved{
-    background: rgba(16, 158, 63, 0.3);
-    color: rgb(28, 114, 49);
+    font-size: 15px;
+    background: rgba(4, 129, 46, 0.753);
+    color: white;
+    font-weight: 200;
 }
 .lst-button.Declined{
-    background: rgba(212, 75, 82, 0.3);
-    color: rgb(212, 75, 82);
+    font-size: 15px;
+    background: rgba(146, 5, 12, 0.747);
+    color: white;
+    font-weight: 200;
 }
 .lst-button.Pending{
-    background: rgba(58, 109, 156, 0.3);
-    color:rgb(58, 109, 156);
+    font-size: 15px;
+    background: rgba(10, 71, 124, 0.795);
+    color:white;
+    font-weight: 200;
 }

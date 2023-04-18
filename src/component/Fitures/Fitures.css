@@ -1,45 +1,63 @@
-.fiture-contaner{
+.fiture-contaner {
     margin: 15px;
     padding: 30px;
     box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     width: 30%;
     cursor: pointer;
-    
+
 }
-.fiture-contaner:hover{
+
+.fiture-contaner:hover {
     transform: rotateY(2px);
     transition: all 0.1s linear;
     box-shadow: 0 0 28px -9px rgba(0, 0, 0, 0.95);
 }
-.fiture{
-}
-.fiture-title{
+
+
+
+.fiture-title {
     font-size: 20px;
-    font-weight:450;
+    font-weight: 450;
 }
-.fiture-other{
+
+.fiture-other {
     display: flex;
     align-items: center;
 }
-.fiture-price{
+
+.fiture-price {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
 
 }
-.fiture-sum{
+
+.fiture-sum {
     display: flex;
-    align-items:center;
-    margin:20px 30px;
+    align-items: center;
+    margin: 20px 30px;
 
-    font-size:15px ;
+    font-size: 20px;
 }
-.fiture-icon{
+
+.fiture-icon-up {
     font-size: 30px;
-    
     color: green;
 }
-.fiture-footer{
+
+
+.fiture-icon-down {
+    font-size: 30px;
+    color: red;
+}
+
+.fiture-footer {
     font-size: 13px;
     color: gray;
+}
+
+@media screen and (max-width:930px) {
+    .fiture-contaner {
+        width: 60%;
+    }
 }

@@ -1,14 +1,15 @@
-.home-contaner{
+.home-contaner {
     width: 80%;
-    background: rgb(224, 224, 224);
-    
+    background: rgb(59, 59, 59);
+
 }
 
-.Home-fitures{
+.Home-fitures {
     display: flex;
     justify-content: space-around;
 }
-.chart-contaner{
+
+.chart-contaner {
     margin: 20px;
     padding: 20px;
     box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.50);
@@ -16,15 +17,41 @@
     font-weight: 630;
 
 }
-.chart-title{
+
+.chart-title {
     margin-bottom: 20px;
+    font-weight: 400;
 }
-.home-botton{
+
+.home-botton {
     display: flex;
 }
-.last-member-home{
+
+.last-member-home {
     flex: 1;
 }
-.last-Transaction{
+
+.last-Transaction {
     flex: 2;
+}
+
+.recharts-text {
+    font-weight: 400;
+}
+
+.recharts-tooltip-wrapper,
+.recharts-default-tooltip {
+    background: #353535 !important;
+    font-weight: 200;
+}
+
+@media screen and (max-width:930px) {
+    .home-botton {
+        flex-direction: column;
+    }
+
+    .Home-fitures {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
 }

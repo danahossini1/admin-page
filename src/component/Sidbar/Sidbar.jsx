@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Sidbar.css'
 import LineStyleIcon from '@mui/icons-material/LineStyle';
@@ -7,53 +7,37 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import ReportIcon from '@mui/icons-material/Report';
 
 export default function Sidbar() {
+
+    const [route, setRoute] = useState(window.location.pathname)
+
+    useEffect(()=>{
+        setRoute(window.location.pathname)
+    },[window.location.pathname])
+    
     return (
         <div className='sidbar-contaner'>
             <div className='sidbar'>
                 <div className='sidmenu'>
-                    <div className='sid-title'>dashboard</div>
+                    <div className='sid-title'>داشبورد</div>
                     <ul className='sid-item'>
-                      <Link to={'/'} className="Link"><li className='sid-item-li active'><LineStyleIcon/> Home</li></Link>  
-                        <li className='sid-item-li'>< TimelineIcon/> Analytics</li>
-                        <li className='sid-item-li'><TrendingUpIcon /> Sales</li>
+                        <Link to={'/'} className="Link"><li className={`sid-item-li ${route[1] !== 'p' && route !== '/userList' ? 'active' : ''}`}><LineStyleIcon />خانه</li></Link>
+                        <li className='sid-item-li premium'>< TimelineIcon /> <span className='premium-sidebar'>premium</span> تحلیل</li>
+                        <li className='sid-item-li premium'><TrendingUpIcon /> <span className='premium-sidebar'>premium</span> فروش</li>
                     </ul>
                 </div>
                 <div className='sidmenu'>
-                    <div className='sid-title'>Quick Menu</div>
+                    <div className='sid-title'>دسترسی سریع</div>
                     <ul className='sid-item'>
-                     <Link to={'/userList'} className="Link"><li className='sid-item-li'>< PermIdentityIcon/> User</li></Link>   
-                     <Link to={'/newUser'} className="Link"><li className='sid-item-li'>< PermIdentityIcon/> New User</li></Link>   
-                     <Link to={'/products'} className="Link"><li className='sid-item-li'>< StorefrontIcon/> Products</li></Link>   
-                        <li className='sid-item-li'>< AttachMoneyIcon/> Transactions</li>
-                        <li className='sid-item-li'>< ReportIcon/> Reports</li>
+                        <Link to={'/userList'} className="Link"><li className={`sid-item-li ${route === '/userList' ? 'active' : ''}`}>< PermIdentityIcon />کاربران</li></Link>
+                        <Link to={'/products'} className="Link"><li className={`sid-item-li ${route[1] === 'p' ? 'active' : ''}`}>< StorefrontIcon /> محصولات</li></Link>
+                        <li className='sid-item-li premium'>< AttachMoneyIcon /> <span className='premium-sidebar'>premium</span> معاملات</li>
+                        <li className='sid-item-li premium'>< ReportIcon /> <span className='premium-sidebar'>premium</span> گزارش ها</li>
                     </ul>
                 </div>
-                <div className='sidmenu'>
-                    <div className='sid-title'>Notifications</div>
-                    <ul className='sid-item'>
-                        <li className='sid-item-li'>< MailOutlineIcon/> Mail</li>
-                        <li className='sid-item-li'>< DynamicFeedIcon/> feedback</li>
-                        <li className='sid-item-li'>< ChatBubbleOutlineIcon/> Messages</li>
-                    </ul>
-                </div>
-                <div className='sidmenu'>
-                    <div className='sid-title'>Staff</div>
-                    <ul className='sid-item'>
-                        <li className='sid-item-li'><WorkOutlineIcon/> Manage</li>
-                        <li className='sid-item-li'>< TimelineIcon/> Analytics</li>
-                        <li className='sid-item-li'>< ReportIcon/> Reports</li>
-                    </ul>
-                </div>
-
             </div>
-
         </div>
     )
 }

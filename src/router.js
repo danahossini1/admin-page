@@ -8,7 +8,7 @@ import Product from './pages/Product/Product'
 
 
 let routes=[
-    {path:'/',element:<Home /> },
+    {path:'/*',element:<Home /> },
     {path:'/newUser',element:<NewUser /> },
     {path:'/products',element:<Products /> },
     {path:'/product/:Id',element:<Product /> },

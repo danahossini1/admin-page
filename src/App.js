@@ -8,14 +8,13 @@ function App() {
 
   let routs = useRoutes(routes)
   return (
-    <>
+    <div className='admin-page'>
       <TopNav />
       <div className='contaner'>
         <Sidbar />
         {routs}
       </div>
-
-    </>
+    </div>
 
   );
 }

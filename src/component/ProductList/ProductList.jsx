@@ -5,14 +5,15 @@ import { DataGrid } from '@mui/x-data-grid'
 import { Allproduct } from '../../data';
 import Box from '@mui/material/Box';
 import { DeleteOutline } from '@mui/icons-material';
+import { fontFamily } from '@mui/system';
 
 export default function UserListComp() {
 
     const [rows, setRows] = useState(Allproduct)
 
 
-    const DeleteUser=Id=>{
-        setRows(rows.filter(user=>user.id!=Id))
+    const DeleteUser = Id => {
+        setRows(rows.filter(user => user.id != Id))
     }
 
 
@@ -20,7 +21,7 @@ export default function UserListComp() {
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         {
-            field: 'User', headerName: 'User', width: 200,
+            field: 'User', headerName: 'کاربر', width: 300,
             renderCell: (params) => {
                 return (
                     <div className='user-Div'>
@@ -30,13 +31,17 @@ export default function UserListComp() {
             }
         },
         {
-            field: 'action', headerName: 'Action', width: 120,
+            field: 'price', headerName: 'قیمت', width: 200,
+            renderCell: (params) => <div > <h2 style={{ color: 'rgb(209, 209, 209)', fontFamily: 'lalezar',fontWeight:'100' }}>{params.row.price}</h2></div>
+        },
+        {
+            field: 'action', headerName: 'ویرایش', width: 120,
             renderCell: (params) => {
                 return (
                     <div className='action-div'>
-                        <Link to={`/product/${params.row.id}`}><button className='action-button'>Edit</button> </Link>
-                        
-                        <DeleteOutline className='action-icon' onClick={()=>DeleteUser(params.row.id)} />
+                        <Link to={`/product/${params.row.id}`}><button className='action-button'>ویرایش</button> </Link>
+
+                        <DeleteOutline className='action-icon' onClick={() => DeleteUser(params.row.id)} />
                     </div>
                 )
             }
@@ -46,7 +51,7 @@ export default function UserListComp() {
 
     return (
         <div className='Data-grid-contaner'>
-            <Box sx={{ height: 500, width: '100%'}} className='Boxxx'>
+            <Box sx={{ height: 500, width: '100%' }} className='Boxxx'>
                 <DataGrid
                     columns={columns}
                     rows={rows}

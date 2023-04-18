@@ -1,44 +1,84 @@
-.sidbar-contaner{
-    height:92vh ;
+.sidbar-contaner {
+    height: 92vh;
     flex: 1;
-    background: rgb(224, 224, 224);
+    background: rgb(59, 59, 59);
     position: sticky;
-    top: 50px
- 
-    
-}
-.sidbar{
-    margin-left: 20px;
-}
-.sid-title{
-    color: rgb(150, 147, 147);
-    margin-top: 12px;
-    font-size: 12px;
+    top: 50px;
+    padding: 10px;
 }
 
-.sid-item-li{
+.sidbar {
+    margin-left: 20px;
+}
+
+.sid-title {
+    color: rgb(163, 163, 163);
+    margin-top: 12px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+.sid-item-li {
+    position: relative;
     list-style: none;
     width: 80%;
     margin-top: 3px;
-    padding: 1.4px;
-    font-size: 16px;
+    padding: 2px;
+    margin-top: 4px;
+    font-size: 20px;
     font-weight: 450;
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: rgb(78, 77, 77);
+    color: rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgb(194, 194, 194);
 }
-.sidmenu{
- margin-top: 18px;
+
+.premium-sidebar {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(4, 123, 179);
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 4px;
+
 }
-.sid-item{
-     display: flex;
-     flex-direction: column;
+
+.premium {
+    color: rgb(167, 167, 167);
+    text-decoration: line-through;
+    cursor: default;
+}
+
+
+.sidmenu {
+    margin-top: 18px;
+}
+
+.sid-item {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
     justify-content: center;
     margin-left: 10px;
 
 }
-.sid-item-li.active, .sid-item-li:hover{
-    background: rgb(209, 209, 209);
+
+.sid-item-li.active,
+.sid-item-li:hover {
+    background: rgb(104, 104, 104);
     border-radius: 10px;
+    transition: 0.2s;
+}
+
+.premium:hover{
+    background: inherit;
+    border-radius: 0;
 }
